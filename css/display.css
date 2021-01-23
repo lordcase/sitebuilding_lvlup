@@ -1,0 +1,69 @@
+.parent {
+  background-color: var(--color1);
+  text-align: center;
+  display: inline-block;
+  /* width: 100%; */
+}
+.box {
+  background-color: var(--color3);
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  border: 5px solid black;
+}
+.block {
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  background-color: var(--color3);
+}
+.content {
+  display: inline-block;
+}
+
+.blockParent {
+  background-color: var(--color1);
+  text-align: center;
+  padding: 1px;
+}
+#demo1 {
+  background-color: var(--color2);
+  margin-block-end: 30px;
+}
+
+#example1 h2 {
+  margin: 20px;
+  /* text-align: center; */
+}
+#example2 h2 {
+  margin: 0 auto;
+  /* width: 100px; */
+}
+
+.inlineBlock {
+  display: inline-block;
+  background-color: rosybrown;
+}
+.inline {
+  display: inline;
+  background-color: goldenrod;
+}
+.rulerParent img {
+  position: relative;
+}
+.rulerParent {
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sizing {
+  position: relative;
+  /* box-sizing: border-box; */
+  width: 150px;
+  /* width: 100%; */
+  /* width: calc(100% - 40px); */
+  padding: 10px 45px;
+  margin: 20px 50px;
+}

@@ -1,0 +1,34 @@
+.navBox {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-flow: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-flow: column;
+  margin: 8px 24px;
+  width: 300px;
+  background-color: white;
+}
+.items {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  padding: 8px 12px 12px;
+  /* overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; */
+}
+
+/* .items::-webkit-scrollbar {
+  display: none;
+} */
+
+.item {
+  background-color: #f2f5f5;
+  padding: 4px 12px !important;
+  min-width: 36px !important;
+  min-height: 24px !important;
+  width: auto;
+  margin-right: 8px;
+}

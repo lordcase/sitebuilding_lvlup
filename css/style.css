@@ -1,0 +1,46 @@
+:root {
+  --color1: #f19066;
+  --color2: #f5cd79;
+  --color3: #546de5;
+  --color4: #574b90;
+  --color5: #63cdda;
+  --color6: #596275;
+}
+
+.wrapper {
+  margin: 0 30px;
+}
+
+section {
+  padding: 20px;
+  margin-block-end: 30px;
+  background-color: var(--color2);
+}
+article {
+  background-color: var(--color1);
+  padding: 20px;
+  margin: 0px 20px 40px;
+}
+.resize {
+  resize: both;
+  overflow: hidden;
+}
+
+a {
+  color: var(--color3);
+}
+h2,
+h3 {
+  background-color: var(--color3);
+}
+
+.center {
+  text-align: center;
+}
+
+.fullWidth {
+  width: 100%;
+  box-sizing: content-box;
+  /* padding: 0 10px; */
+  /* margin: 0 10px; */
+}
