@@ -22,6 +22,8 @@ body {
 .main-header {
   height: 50px;
   background: var(--color2);
+  position: sticky;
+  top: 15px;
 }
 .main-content {
   min-height: 1000px;

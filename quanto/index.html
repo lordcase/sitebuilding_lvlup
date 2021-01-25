@@ -1,0 +1,792 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Qanto main</title>
+  <meta name="description" content="Qanto main page">
+  <meta name="author" content="Lordcase">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css?v=1">
+  <link rel="stylesheet" href="assets/css/mainnav.css">
+  <link rel="stylesheet" href="assets/css/tabnav.css?v=1">
+  <link rel="stylesheet" href="assets/css/btf.css?v=1">
+  <link rel="stylesheet" href="assets/css/btf_equipment.css?v=1">
+  <link rel="stylesheet" href="assets/css/btf_history.css?v=1">
+
+</head>
+
+<body ondragstart="return false;" ondrop="return false;">
+
+
+<header>
+	<div id="header_inner">
+		<a href="#">
+			<div id="logo_wrap">
+				<div id="logo"><img src="https://prezi2.com/test/layout/assets/nav-logo.svg" width="100%" /></div>
+				<div id="logo_emblem" class="font_navicon">0</div>
+			</div>
+		</a>
+		<div id="header_nav">
+			<ul>
+				<li class="mainnav_item noselect"><a href="#">Registreringer</a></li>
+				<li class="mainnav_item noselect active"><a href="#">Bestand</a></li>
+				<li class="mainnav_item noselect"><a href="#">Historik</a></li>
+				<li class="mainnav_item noselect"><a href="#">Kort</a></li>
+				<li class="extranav_item noselect"><a href="#"><div class="font_navicon">4</div>Focus Lists</a></li>
+				<li class="extranav_item noselect"><a href="#"><div class="font_navicon">5</div>Help</a></li>
+				<li class="extranav_item sepaline"><a href="#"><div class="font_navicon">6</div>Account settings</a></li>
+				<li class="extranav_item noselect"><a href="#"><div class="font_navicon">7</div>Logout</a></li>
+			</ul>
+			<span class="target"></span>
+		</div>
+		<div id="hamburger_toggle" onclick="openMobileMenu('hmenu');">
+			<div class="menu-wrapper">
+				<div class="hamburger-menu" id="hmenu"></div>
+			</div>
+		</div>
+		<div id="header_top_right">
+			<div id="csillagkerdes">
+				<a href="#" class="font_navicon"><div id="csillag" class="headerIcon">4</div></a>
+				<a href="#" class="font_navicon"><div id="kerdes" class="headerIcon">5</div></a>
+			<a href="#" class="font_navicon"><div id="account" class="headerIcon">6</div></a>
+				<div id="accountnav_main" >
+					<div id="accountnav_topleft">
+						<div id="accountnav_photo" ><div class="font_navicon">6</div></div>
+					</div>
+					<div id="accountnav_topright">
+						<div id="accountnav_name">Jens Jensen</div>
+						<div id="accountnav_email" >DBI IT A/S<br>eksterne konsulenter</div>
+					</div>
+					<div class="accountnav_separator"></div>
+					<div id="accountnav_settings">Settings</div>
+					<div class="accountnav_separator"></div>
+					<div id="accountnav_logout">LogOut</div>
+				</div>
+			</div>
+		</div>
+		<div id="header_search" class="">
+			<div id="search_icon"><div class="font_navicon">2</div></div>
+			<input autocomplete="off" class="searchField" id="searchField" placeholder="Search for vehicles and companies" />
+			<div id="search_extra">
+				<div class="search_separator"><div></div></div>
+				<div id="search_latest">Latest searches</div>
+				<div id="search_results">Search results</div>
+				<div id="search_results_results">
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-flat.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-2.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI dkhdk fgsdhf kds g</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-big.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-1.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-flat.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-2.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI dkhdk fgsdhf kds g</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-big.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-1.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-flat.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-2.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI dkhdk fgsdhf kds g</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-big.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-1.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-flat.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-2.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+					<a href="#" class="search_result_link">
+						<div class="search_result">
+							<div class="search_result_left">
+								<div class="search_result_type">Volkswagen Golf V 2.0 TDI dkhdk fgsdhf kds g</div>
+								<div class="search_result_serial">WVWZZZ1KZBP080770</div>
+								<div class="search_result_licence">
+									<img src="images/reg-num-plates/reg-num-plate-big.png"/>
+								</div>
+								<div class="search_result_status"></div>
+							</div>
+							<div class="search_result_right">
+								<div class="search_result_x"><img width="100%" src="images/action-icons/close-normal.svg" onmouseover="this.src='images/action-icons/close-hover.svg'" onmouseout="this.src='images/action-icons/close-normal.svg'"></div>
+								<div class="spacer" style="clear: both;"></div>
+								<div class="search_result_carimg"><img src="images/searchbar-vehicle-1.png" width="100%" /></div>
+								<div class="search_result_firstreg">1st reg. 02/22/2022</div>
+							</div>
+							<div class="spacer" style="clear: both;"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="header_placeholder"></div>
+
+<div class="main-content">
+	<div id="content_main">
+		<div id="content_head">
+			<a href="https://prezi2.com/wn41/test2/qanto-report-all.pdf" target="_blank"><div id="content_pdf" class="noselect">PDF</div></a>
+			<div id="content_type">TESLA MODEL 3 LONG RANGE PERFORMANCE</div>
+			<div id="content_serial">5VE687HLURP81ZZ9S</div>
+		</div>
+		<div class="debt_warrant normalScreen"><div class="debt_warrant_inner">There is registered debt on this vehicle</div></div>
+		<div class="debt_wanted normalScreen">This vehicle is wanted by the police</div>
+		<div id="content_c1_checklist" class="content_box checklist">
+					<div class="content_box_head separated">
+						<div class="content_box_title smalltext">Checklist</div>
+						<div class="content_box_checklist_opener">
+							<div class="hitarea" onclick="addOpen(this);">
+								<div class="downarrow"></div>
+							</div>
+						</div>
+						<div class="content_box_checklist_summary">Something is not right 4/6 !</div>
+					</div>
+					<div class="content_box_block">
+						<div class="content_box_row">
+							<div class="content_box_halfhalf">Vehicle wanted by police</div>
+							<div class="content_box_halfhalf"><span class="smalltext">No</span><div class="font_utilicon checkmark"></div></div>
+						</div>
+						<div class="content_box_row emphasis">
+							<div class="content_box_halfhalf">Registered debt</div>
+							<div class="content_box_halfhalf"><span class="smalltext">Yes</span><img alt="" class="content_box_icon noselect" src="images/action-icons/exclamationmark.svg"></div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_halfhalf">Vehicle wanted by police</div>
+							<div class="content_box_halfhalf"><span class="smalltext">No</span><img alt="" class="content_box_icon noselect" src="images/action-icons/checkmark.svg"></div>
+						</div>
+						<div class="content_box_row emphasis">
+							<div class="content_box_halfhalf">Registered debt</div>
+							<div class="content_box_halfhalf"><span class="smalltext">Yes</span><img alt="" class="content_box_icon noselect" src="images/action-icons/exclamationmark.svg"></div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_halfhalf">Vehicle wanted by police</div>
+							<div class="content_box_halfhalf"><span class="smalltext">No</span><img alt="" class="content_box_icon noselect" src="images/action-icons/checkmark.svg"></div>
+						</div>
+						<div class="content_box_row emphasis">
+							<div class="content_box_halfhalf">Registered debt</div>
+							<div class="content_box_halfhalf"><span class="smalltext">Yes</span><img alt="" class="content_box_icon noselect" src="images/action-icons/exclamationmark.svg"></div>
+						</div>
+					</div>			
+		</div>
+		<div id="content_grid" class="">
+			<div id="content_a1_vehicle_data" class="content_box">
+				<div id="content_box_vehicle_align">
+					<div class="content_box_head">
+						<div class="content_box_title">Vehicle</div>
+					</div>
+					<div class="content_box_block">
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Make</div>
+							<div class="content_box_4_6">TESLA</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Model</div>
+							<div class="content_box_4_6">MODEL 3</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Variant</div>
+							<div class="content_box_4_6">LONG RANGE PERFORMANCE</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Fuel</div>
+							<div class="content_box_4_6">Electricity <sup>166.0 Wh/km</sup></div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Category</div>
+							<div class="content_box_4_6">Passenger car</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Equipment line</div>
+							<div class="content_box_4_6">Comfortline Premium </div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Energy rating</div>
+							<div class="content_box_4_6">B <sup>164 g/km</sup><div class="font_utilicon content_icon openergy"></div></div>
+						</div>
+					</div>
+				</div>
+				<div class="content_box_block fixheight">
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Insurance</div>
+						<div class="content_box_4_6">
+							<div class="popover_parent">Tryg Forsikring A/S<div class="font_utilicon content_icon openergy"></div></div>
+							<div class="popover_content"></div>
+							<div class="content_subtext">1 recent change(s)</div>
+						</div>
+					</div>
+				</div>
+				<div class="content_box_block">
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Leasing</div>
+						<div class="content_box_4_6">Business leasing
+							<div class="content_subtext">3-year contract</div>
+						</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Contract started</div>
+						<div class="content_box_4_6">1 months ago
+							<div class="content_subtext">2023-03-04</div>
+						</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Contract expires</div>
+						<div class="content_box_4_6">in 3 years
+							<div class="content_subtext">2023-03-03</div>
+						</div>
+					</div>
+				</div>
+				<div class="content_box_block">
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">User</div>
+						<div class="content_box_4_6">
+							<div class="popover_parent">Nf Fleet A/S<div class="font_utilicon content_icon openergy"></div></div>
+							<div class="popover_content"></div>
+							<div class="content_subtext">Udlejning og leasing af biler og lette motorkøretøjer</div>
+						</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">User's town</div>
+						<div class="content_box_4_6">7330 Brande</div>
+					</div>
+				</div>
+				<div class="content_box_block">
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Owner</div>
+						<div class="content_box_4_6">
+							<div class="popover_parent">Nf Fleet A/S<div class="font_utilicon content_icon openergy"></div></div>
+							<div class="popover_content"></div>
+							<div class="content_subtext">Udlejning og leasing af biler og lette motorkøretøjer</div>
+						</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Owner's town</div>
+						<div class="content_box_4_6">2630 Taastrup</div>
+					</div>
+				</div>
+			</div>
+			<div id="content_a3_vehicle_extra" class="content_box">
+				<div class="content_box_block">
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Estimated mileage<div class="font_utilicon content_icon tooltip"></div></div>
+						<div class="content_box_4_6">272 500 km</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Annual mileage</div>
+						<div class="content_box_4_6">12 000 km</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Annual mileage</div>
+						<div class="content_box_4_6">249 000 km</div>
+					</div>
+				</div>
+				<div class="content_box_block">
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Entered current fleet<div class="font_utilicon content_icon tooltip"></div></div>
+						<div class="content_box_4_6">1 months ago
+							<div class="content_subtext">2023-03-03</div>
+						</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Entered traffic</div>
+						<div class="content_box_4_6">1 months ago
+							<div class="content_subtext">2020-03-01</div>
+						</div>
+					</div>
+				</div>
+				<div class="content_box_block">
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Latest transaction</div>
+						<div class="content_box_4_6">Change of owner or user
+							<div class="content_subtext">2017-03-03</div>
+						</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Latest inspection</div>
+						<div class="content_box_4_6">1 years, 4 months ago
+							<div class="content_subtext">2018-12-18</div>
+						</div>
+					</div>
+					<div class="content_box_row">
+						<div class="content_box_4_6 strongtext">Next inspection</div>
+						<div class="content_box_4_6">in 8 months
+							<div class="content_subtext">2021-01-08</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div id="content_a2_vehicle_visual" class="content_box">
+				<div class="content_box_row fixheight focusrow">
+					<div class="content_box_4_6 strongtext focustext">Focus lists</div>
+					<div class="content_box_4_6"><div class="font_utilicon content_icon cog"></div></div>
+				</div>
+				<div class="content_box_naked" id="vehicle_svg">
+					<img class="noselect" src="images/3.svg" />
+					<div class="vehicle_toggle" id="vehicle_toggle"><div id="vehicle_toggle_expand" class="font_utilicon content_icon expand show"></div><div  id="vehicle_toggle_close" class="font_utilicon content_icon close"></div></div>
+					<div class="vehicle_subtext">C. Medium Estate<br>Gray</div>
+					<div id="vehicle_expanded_info">
+						<div class="content_box_halfhalf">
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Next inspection</div>
+								<div class="content_box_halfhalf">"in 8 months</div>
+							</div>
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Annual mileage</div>
+								<div class="content_box_halfhalf">12 000 km</div>
+							</div>
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Next inspection</div>
+								<div class="content_box_halfhalf">"in 8 months</div>
+							</div>
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Annual mileage</div>
+								<div class="content_box_halfhalf">12 000 km</div>
+							</div>
+						</div>
+						<div class="content_box_halfhalf">
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Next inspection</div>
+								<div class="content_box_halfhalf">"in 8 months</div>
+							</div>
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Annual mileage</div>
+								<div class="content_box_halfhalf">12 000 km</div>
+							</div>
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Next inspection</div>
+								<div class="content_box_halfhalf">"in 8 months</div>
+							</div>
+							<div class="content_box_row">
+								<div class="content_box_halfhalf strongtext">Annual mileage</div>
+								<div class="content_box_halfhalf">12 000 km</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content_b1_registration">
+				<div class="debt_warrant wideScreen"><div class="debt_warrant_inner">There is registered debt on this vehicle</div></div>
+				<div class="debt_wanted wideScreen">This vehicle is wanted by the police</div>
+				<div id="content_b1_2_checklist" class="checklist closed content_box">
+					<div class="content_box_head separated">
+						<div class="content_box_title smalltext">Checklist</div>
+						<div class="content_box_checklist_opener">
+							<div class="hitarea" onclick="addOpen(this);">
+								<div class="downarrow"></div>
+							</div>
+						</div>
+						<div class="content_box_checklist_summary">Something is not right 4/6 !</div>
+					</div>
+					<div class="content_box_block separated">
+						<div class="content_box_row">
+							<div class="content_box_halfhalf">Vehicle wanted by police</div>
+							<div class="content_box_halfhalf"><span class="smalltext">No</span><div class="font_utilicon content_icon checkmark"></div></div>
+						</div>
+						<div class="content_box_row emphasis">
+							<div class="content_box_halfhalf">Registered debt</div>
+							<div class="content_box_halfhalf"><span class="smalltext">Yes</span><div class="font_utilicon content_icon exclamark"></div></div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_halfhalf">Vehicle wanted by police</div>
+							<div class="content_box_halfhalf"><span class="smalltext">No</span><div class="font_utilicon content_icon checkmark"></div></div>
+						</div>
+						<div class="content_box_row emphasis">
+							<div class="content_box_halfhalf">Registered debt</div>
+							<div class="content_box_halfhalf"><span class="smalltext">Yes</span><div class="font_utilicon content_icon exclamark"></div></div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_halfhalf">Vehicle wanted by police</div>
+							<div class="content_box_halfhalf"><span class="smalltext">No</span><div class="font_utilicon content_icon checkmark"></div></div>
+						</div>
+						<div class="content_box_row emphasis">
+							<div class="content_box_halfhalf">Registered debt</div>
+							<div class="content_box_halfhalf"><span class="smalltext">Yes</span><div class="font_utilicon content_icon exclamark"></div></div>
+						</div>
+					</div>
+				</div>
+				<div id="content_b1_1_registration" class="content_box">
+					<div class="content_box_head">
+						<div class="content_box_title">Registration</div>
+						<div class="content_box_title_right"><img class="noselect" src="images/WDD2130041A739403.svg"/></div>
+					</div>
+					<div class="content_box_block">
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Current status</div>
+							<div class="content_box_4_6">
+								<div class="registration_status"></div> <strong>REGISTERED</strong>
+							</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Text on reg. certificate</div>
+							<div class="content_box_4_6">TESLA Model 3 Long Range Performance 4-dr Fixed Ratio</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">National vehicle category and usage</div>
+							<div class="content_box_4_6">e4*2007/46*1293*06</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">EU type approval</div>
+							<div class="content_box_4_6">0101 Personbil - Privat personkørsel</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Type approval category</div>
+							<div class="content_box_4_6">M1</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">National Permits</div>
+							<div class="content_box_4_6">None</div>
+						</div>
+						<div class="content_box_row">
+							<div class="content_box_4_6 strongtext">Suppl. bodywork</div>
+							<div class="content_box_4_6">None</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br><br>
+
+<div id="tabTop" style="position: relative; width: 100%; height: 1px; display: block;"></div>
+<div id="tabs_navbar">
+	<div id="tabs_inner">
+		<div id="tabs_tabs">
+			<div class="tabs_tab">
+				<div class="tab_icon"><img src="images/tab-navbar-icons/overview-normal.svg" onmouseover="this.src='images/tab-navbar-icons/overview-active.svg'" onmouseout="this.src='images/tab-navbar-icons/overview-normal.svg'"></div>
+				<div class="tab_label">Overview</div>
+			</div>
+			<div class="tabs_tab">
+				<div class="tab_icon"><img src="images/tab-navbar-icons/spec-normal.svg" onmouseover="this.src='images/tab-navbar-icons/spec-active.svg'" onmouseout="this.src='images/tab-navbar-icons/spec-normal.svg'"></div>
+				<div class="tab_label">Specifications</div>
+			</div>
+			<div class="tabs_tab">
+				<div class="tab_icon"><img src="images/tab-navbar-icons/eco-normal.svg" onmouseover="this.src='images/tab-navbar-icons/eco-active.svg'" onmouseout="this.src='images/tab-navbar-icons/eco-normal.svg'"></div>
+				<div class="tab_label">Prices and Taxation</div>
+			</div>
+			<div class="tabs_tab">
+				<div class="tab_icon"><img src="images/tab-navbar-icons/equip-normal.svg" onmouseover="this.src='images/tab-navbar-icons/equip-active.svg'" onmouseout="this.src='images/tab-navbar-icons/equip-normal.svg'"></div>
+				<div class="tab_label">Equipment</div>
+			</div>
+			<div class="tabs_tab">
+				<div class="tab_icon"><img src="images/tab-navbar-icons/history-normal.svg" onmouseover="this.src='images/tab-navbar-icons/history-active.svg'" onmouseout="this.src='images/tab-navbar-icons/history-normal.svg'"></div>
+				<div class="tab_label">History</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</div>
+<div id="content_extra" class="main-content" >
+	<div id="btf_specifications" class="btf_container_flex" style="max-width: 958px;margin: 30px auto;padding: 45px 20px 20px;">
+		<div class="btf_block">
+				<div class="btf_icon"><div class="font_vehicon">a</div></div>
+				<div class="btf_title">Fuel & Emission</div>
+				<div class="btf_content">
+						<div class="btf_content_row_halfhalf strongtext">CO emissions</div>
+						<div class="btf_content_row_halfhalf">0.0 g/km</div>
+						<div class="btf_content_row_halfhalf strongtext">Nox emissions</div>
+						<div class="btf_content_row_halfhalf">0.0 g/km</div>
+						<div class="btf_content_row_halfhalf strongtext">Electric consumption (WLTP)</div>
+						<div class="btf_content_row_halfhalf">166.0 Wh/km</div>
+						<div class="btf_content_row_halfhalf strongtext">Max. electric range (WLTP)</div>
+						<div class="btf_content_row_halfhalf">530 km</div>
+				</div>
+		</div>
+		<div class="btf_block">
+				<div class="btf_icon"><div class="font_vehicon">b</div></div>
+				<div class="btf_title">Bodywork</div>
+				<div class="btf_content">
+						<div class="btf_content_row_halfhalf strongtext">Bodywork<div class="font_utilicon content_icon tooltip"></div></div>
+						<div class="btf_content_row_halfhalf">Saloon</div>
+						<div class="btf_content_row_halfhalf strongtext">Original colour<div class="font_utilicon content_icon tooltip"></div></div>
+						<div class="btf_content_row_halfhalf">White</div>
+						<div class="btf_content_row_halfhalf strongtext">Segment</div>
+						<div class="btf_content_row_halfhalf">D: Large</div>
+						<div class="btf_content_row_halfhalf strongtext">Doors</div>
+						<div class="btf_content_row_halfhalf">4</div>
+						<div class="btf_content_row_halfhalf strongtext">Seats</div>
+						<div class="btf_content_row_halfhalf">5</div>
+						<div class="btf_content_row_halfhalf strongtext">Location of VIN</div>
+						<div class="btf_content_row_halfhalf">Højre B stolpe</div>
+				</div>
+		</div>
+		<div class="btf_block">
+				<div class="btf_icon"><div class="font_vehicon">c</div></div>
+				<div class="btf_title">Engine</div>
+				<div class="btf_content">
+						<div class="btf_content_row_halfhalf strongtext">Engine power</div>
+						<div class="btf_content_row_halfhalf">512.3 HK</div>
+						<div class="btf_content_row_halfhalf strongtext">Electric engine power</div>
+						<div class="btf_content_row_halfhalf">70.0</div>
+						<div class="btf_content_row_halfhalf strongtext">Sound level, stationary</div>
+						<div class="btf_content_row_halfhalf">377 kW</div>
+						<div class="btf_content_row_halfhalf strongtext">Sound level, drive by</div>
+						<div class="btf_content_row_halfhalf">0.0</div>
+						<div class="btf_content_row_halfhalf strongtext">Top speed</div>
+						<div class="btf_content_row_halfhalf">261</div>
+				</div>
+		</div>
+		<div class="btf_block">
+				<div class="btf_icon"><div class="font_vehicon">d</div></div>
+				<div class="btf_title">Weights</div>
+				<div class="btf_content">
+						<div class="btf_content_row_halfhalf strongtext">Total weight</div>
+						<div class="btf_content_row_halfhalf">2305 kg</div>
+						<div class="btf_content_row_halfhalf strongtext">Mass in running order</div>
+						<div class="btf_content_row_halfhalf">1967 kg</div>
+						<div class="btf_content_row_halfhalf strongtext">Technically permissible maximum mass</div>
+						<div class="btf_content_row_halfhalf">2305 kg</div>
+				</div>
+		</div>
+		<div class="btf_block">
+				<div class="btf_icon"><div class="font_vehicon">e</div></div>
+				<div class="btf_title">Axles</div>
+				<div class="btf_content">
+						<div class="btf_content_row_halfhalf strongtext">Number of axles</div>
+						<div class="btf_content_row_halfhalf">2</div>
+						<div class="btf_content_row_halfhalf strongtext">Powered axles</div>
+						<div class="btf_content_row_halfhalf">1st and 2nd axle</div>
+						<div class="btf_content_row_halfhalf strongtext">Max. axle load</div>
+						<div class="btf_content_row_halfhalf">1257</div>
+						<div class="btf_content_row_halfhalf strongtext">Spacing</div>
+						<div class="btf_content_row_halfhalf">2875</div>
+						<div class="btf_content_row_halfhalf strongtext">Track front</div>
+						<div class="btf_content_row_halfhalf">1580</div>
+						<div class="btf_content_row_halfhalf strongtext">Track rear</div>
+						<div class="btf_content_row_halfhalf">1580</div>
+				</div>
+		</div>
+		<div class="btf_block">
+				<div class="btf_icon"><div class="font_vehicon">f</div></div>
+				<div class="btf_title">Dimensions</div>
+				<div class="btf_content">
+						<div class="btf_content_row_halfhalf strongtext">Width</div>
+						<div class="btf_content_row_halfhalf">1850 mm</div>
+						<div class="btf_content_row_halfhalf strongtext">Height</div>
+						<div class="btf_content_row_halfhalf">1443 mm</div>
+						<div class="btf_content_row_halfhalf strongtext">Length</div>
+						<div class="btf_content_row_halfhalf">4694 mm</div>
+				</div>
+		</div>
+		<div class="btf_block">
+				<div class="btf_icon"><div class="font_vehicon">g</div></div>
+				<div class="btf_title">Tyres and Wheels</div>
+				<div class="btf_content">
+						<div class="btf_content_row_halfhalf strongtext">1. Aksel</div>
+						<div class="btf_content_row_halfhalf">235/35R20, 92Y, 8.5J X 20 OS 35. 2</div>
+						<div class="btf_content_row_halfhalf strongtext">2. Aksel</div>
+						<div class="btf_content_row_halfhalf">235/35R20, 92Y, 8.5J X 20 OS 35</div>
+				</div>
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+	
+	<div id="btf_equipment" class="btf_container" style="max-width: 958px;margin: 30px auto;padding: 45px 20px 20px;">
+		<div class="btf_icon"><div class="font_vehicon">k</div></div>
+		<div class="btf_title">Equipment</div>
+		<div class="btf_equipment_box btf_content_box">
+			<div class="btf_equipment_header">
+				<div class="btf_equipment_title">Optional equipment</div>
+				<div class="btf_opener" onclick="btfAddOpen(this);"><div class="btf_hitarea"><div class="downarrow"></div></div></div>
+				<div class="btf_equipment_counter">2 pieces</div>
+			</div>
+			<div class="btf_equipment_content">
+				<div class="btf_equipment_row">Nedfældeligt anhængertræk (550)</div>
+				<div class="btf_equipment_row">Active Distance Assist DISTRONIC (239)</div>
+			</div>
+		</div>
+		<div class="btf_equipment_box btf_content_box">
+			<div class="btf_equipment_header">
+				<div class="btf_equipment_title">Standard equipment</div>
+				<div class="btf_opener" onclick="btfAddOpen(this);"><div class="btf_hitarea"><div class="downarrow"></div></div></div>
+				<div class="btf_equipment_counter">1 piece</div>
+			</div>
+			<div class="btf_equipment_content">
+				<div class="btf_equipment_row">Standardpakke I (PYA)</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+	<div style="clear:both;"></div>
+
+
+	<div id="btf_history" class="btf_container" style="max-width: 958px;margin: 30px auto;padding: 45px 20px 20px;">
+		<div class="btf_icon"><div class="font_vehicon">l</div></div>
+		<div class="btf_title">Vehicle History</div>
+		<div class="btf_history_box btf_content_box btf_history_today">
+			<div class="btf_history_header">
+				<div class="btf_history_dot_small_outer"><div class="btf_history_dot_small_inner"></div></div>
+				<div class="btf_history_date ">Today</div>
+				<div class="btf_history_righttext">Data is updated per 31 January 2020</div>
+			</div>
+		</div>
+		<div class="btf_history_connector"></div>
+		<div class="btf_history_box btf_content_box">
+			<div class="btf_history_header">
+				<div class="btf_history_dot_big_outer"><div class="btf_history_dot_big_inner"></div></div>
+				<div class="btf_history_date">02.02.2020</div>
+				<div class="btf_history_title">New Registration</div>
+				<div class="btf_opener" onclick="btfAddOpen(this);"><div class="btf_hitarea"><div class="downarrow"></div></div></div>
+			</div>
+			<div class="btf_history_content">
+				<div class="btf_history_left">
+					<div class="btf_history_content_row btf_history_content_title">User</div>
+					<div class="btf_history_content_row btf_history_content_text fixedheight">Dansk Reursystem A/S<div class="font_utilicon content_icon openergy"></div></div>
+					<div class="btf_history_content_row btf_history_content_title">Owner</div>
+					<div class="btf_history_content_row btf_history_content_text">Danske Leasing A/S<div class="font_utilicon content_icon openergy"></div></div>
+					<div class="btf_history_content_row btf_history_content_title">User</div>
+					<div class="btf_history_content_row btf_history_content_text fixedheight">Dansk Reursystem A/S<div class="font_utilicon content_icon openergy"></div></div>
+					<div class="btf_history_content_row btf_history_content_title">Owner</div>
+					<div class="btf_history_content_row btf_history_content_text">Danske Leasing A/S<div class="font_utilicon content_icon openergy"></div></div>
+				</div>
+				<div class="btf_history_right">
+					<div class="btf_history_content_row btf_history_content_title">Registration</div>
+					<div class="btf_history_content_row btf_history_content_licence fixedheight"><img class="noselect" src="images/WDD2130041A739403.svg"/></div>
+					<div class="btf_history_content_row btf_history_content_title">Insurance</div>
+					<div class="btf_history_content_row btf_history_content_text">Tryg Forsikrig A/S<div class="font_utilicon content_icon openergy"></div></div>
+					<div class="btf_history_content_row btf_history_content_title">Registration</div>
+					<div class="btf_history_content_row btf_history_content_licence fixedheight"><img class="noselect" src="images/TABMC040JJB319073.svg"/></div>
+					<div class="btf_history_content_row btf_history_content_title">Insurance</div>
+					<div class="btf_history_content_row btf_history_content_text">Tryg Forsikrig A/S<div class="font_utilicon content_icon openergy"></div></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div style="clear:both;"></div>
+</div>
+
+<br><br>
+<br><br>
+<br><br>
+
+<br><br>
+<br><br>
+<br><br>
+
+
+
+  <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>

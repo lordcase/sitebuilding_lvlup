@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Storybook - Sitebuilding Sans</title>
+    <meta name="description" content="CodingSans" />
+    <meta name="author" content="lordcase" />
+    <link rel="stylesheet" href="css/reset.css?v=1.0" />
+    <link rel="stylesheet" href="css/style.css?v=1.0" />
+    <link rel="stylesheet" href="css/stacking.css?v=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section>
+        <div id="div1">
+          <h1>Division Element #1</h1>
+          <code
+            >position: relative;<br />
+            z-index: 5;</code
+          >
+        </div>
+
+        <div id="div2">
+          <h1>Division Element #2</h1>
+          <code
+            >position: relative;<br />
+            z-index: 2;</code
+          >
+        </div>
+
+        <div id="div3">
+          <div id="div4">
+            <h1>Division Element #4</h1>
+            <code
+              >position: relative;<br />
+              z-index: 6;</code
+            >
+          </div>
+
+          <h1>Division Element #3</h1>
+          <code
+            >position: absolute;<br />
+            z-index: 4;</code
+          >
+
+          <div id="div5">
+            <h1>Division Element #5</h1>
+            <code
+              >position: relative;<br />
+              z-index: 1;</code
+            >
+          </div>
+
+          <div id="div6">
+            <h1>Division Element #6</h1>
+            <code
+              >position: absolute;<br />
+              z-index: 3;</code
+            >
+          </div>
+        </div>
+        <ul>
+          <li>
+            Root
+            <ul>
+              <li>DIV #1</li>
+              <li>DIV #2</li>
+              <li>
+                DIV #3
+                <ul>
+                  <li>DIV #4</li>
+                  <li>DIV #5</li>
+                  <li>DIV #6</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <img src="https://i.stack.imgur.com/kHNbf.png" alt="" />
+      </section>
+      <section>
+        <h1>What forms a stacking context</h1>
+        <br />
+        <pre>
+Root element of the document.
+Element with a position value absolute or relative and z-index value other than auto.
+Element with a position value fixed or sticky (sticky for all mobile browsers, but not older desktop).
+Element that is a child of a flex (css_flexible_box_layout/basic_concepts_of_flexbox) container, with z-index value other than auto.
+Element that is a child of a grid (grid) container, with z-index value other than auto.
+Element with a opacity value less than 1 (See the specification for opacity).
+Element with a mix-blend-mode value other than normal.
+Element with any of the following properties with value other than none:
+  transform
+  filter
+  perspective
+  clip-path
+  mask / mask-image / mask-border
+Element with a isolation value isolate.
+Element with a -webkit-overflow-scrolling value touch.
+Element with a will-change value specifying any property that would create a stacking context on non-initial value (see this post).
+Element with a contain value of layout, or paint, or a composite value that includes either of them (i.e. contain: strict, contain: content).
+</pre
+        >
+      </section>
+    </div>
+  </body>
+</html>

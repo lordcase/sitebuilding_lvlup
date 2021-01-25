@@ -1,8 +1,7 @@
 .parent {
   background-color: var(--color1);
-  text-align: center;
   display: inline-block;
-  /* width: 100%; */
+  font-size: 18px;
 }
 .box {
   background-color: var(--color3);
@@ -10,6 +9,7 @@
   padding: 20px;
   margin: 20px;
   border: 5px solid black;
+  text-align: center;
 }
 .block {
   display: block;
@@ -31,16 +31,64 @@
   background-color: var(--color2);
   margin-block-end: 30px;
 }
-
-#example1 h2 {
-  margin: 20px;
-  /* text-align: center; */
+.displayExample1 {
 }
-#example2 h2 {
-  margin: 0 auto;
+.displayExample2 {
+}
+.displayExample3 {
+}
+
+.displayExample1 h2 {
+  /* margin: 20px 0px; */
+  /* text-align: center; */
   /* width: 100px; */
 }
+.displayExample2 h2 {
+  /* display: inline; */
+  /* margin: 20px; */
+  /* padding: 40px; */
+}
 
+.displayExample3 h2 {
+  /* display: inline-block; */
+  /* margin: 20px; */
+  /* width: 80px; */
+}
+.displayExample4 {
+  text-align: justify;
+}
+.displayExample4 img {
+  /* margin-block-end: 9px; */
+}
+.displayExample4 p {
+  background-color: var(--color3);
+}
+.float1 {
+  float: right;
+  width: 122px;
+  margin-inline-start: 10px;
+}
+.float2 {
+  float: left;
+  width: 100px;
+  margin-inline-end: 10px;
+}
+.floatExample {
+}
+.resizable {
+  resize: horizontal;
+  overflow: auto;
+  /* display: block; */
+}
+.floatRight {
+  /* display: inline-block; */
+  /* float: right; */
+  width: 40px;
+  padding: 20px;
+  margin: 0 10px;
+  font-size: 40px;
+  background-color: var(--color3);
+}
 .inlineBlock {
   display: inline-block;
   background-color: rosybrown;
@@ -49,6 +97,15 @@
   display: inline;
   background-color: goldenrod;
 }
+.iParent {
+  background-color: var(--color3); /* font-size: 0; */
+}
+.iBlock {
+  background-color: var(--color3);
+  display: inline-block;
+  width: 100%;
+}
+.iParent img {/* vertical-align: bottom; */}
 .rulerParent img {
   position: relative;
 }
@@ -59,11 +116,88 @@
 }
 
 .sizing {
-  position: relative;
   /* box-sizing: border-box; */
   width: 150px;
   /* width: 100%; */
   /* width: calc(100% - 40px); */
   padding: 10px 45px;
   margin: 20px 50px;
+}
+.boxSizingParent {
+  /* width: 350px; */
+}
+xx {
+  /* font-size: 43px; */
+}
+#s10,
+.specContent xx {
+  /* font-size: 14px; */
+  /* visibility: visible; */
+}
+
+#s20,
+div .specContent xx {
+  /* font-size: 17px; */
+  /* visibility: visible; */
+}
+#s25,
+.parent .specContent xx {
+  /* font-size: 20px; */
+  /* visibility: visible; */
+}
+#s30,
+div #specContent xx {
+  /* font-size: 23px; */
+  /* visibility: visible; */
+}
+#s40,
+#parent1 div .specContent xx {
+  /* font-size: 26px; */
+  /* visibility: visible; */
+}
+#s50,
+div#parent1 div .specContent xx {
+  /* font-size: 29px; */
+  /* visibility: visible; */
+}
+
+#s60,
+div#parent1.parent1 div div .specContent xx {
+  /* font-size: 32px; */
+  /* visibility: visible; */
+}
+
+#s70,
+#parent1 #specContent xx {
+  /* font-size: 35px; */
+  /* visibility: visible; */
+}
+
+.specCounter {
+  font-size: 35px !important;
+  background-color: var(--color2);
+  visibility: hidden;
+  position: absolute;
+  top: 33px;
+  left: 149px;
+}
+.specCounter:first-child {
+  visibility: visible;
+}
+.alignment {
+}
+.alignment .parent {
+  /* vertical-align: top; */
+  /* position: absolute; */
+  /* position: relative; */
+  /* position: fixed; */
+  /* top: 20px; */
+  /* left: 2px; */
+}
+.cageSeparator {
+  background-color: white;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  display: none;
 }

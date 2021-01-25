@@ -25,9 +25,14 @@ article {
   resize: both;
   overflow: hidden;
 }
-
+ul {
+  padding-inline-start: 20px;
+}
 a {
   color: var(--color3);
+}
+.moreInfo {
+  float: right;
 }
 h2,
 h3 {
@@ -40,7 +45,11 @@ h3 {
 
 .fullWidth {
   width: 100%;
-  box-sizing: content-box;
-  /* padding: 0 10px; */
-  /* margin: 0 10px; */
+}
+.relative {
+  position: relative;
+}
+.blockContent {
+  background-color: white;
+  width: 100px;
 }
